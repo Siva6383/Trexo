@@ -553,12 +553,13 @@ body {
     .products {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
-        padding: 15px;
+        padding: 10px;
         margin: 0 auto;
         max-width: 100%;
     }
 
     .new-arrival {
+        padding: 10px;
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -577,6 +578,10 @@ body {
 
     .contact-form {
         padding: 20px;
+    }
+
+    .footer{
+        padding: 20px 15px;
     }
 }
 
