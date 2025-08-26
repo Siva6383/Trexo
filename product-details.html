@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-details-container {
+            flex: 1;
+            /* take remaining space to push footer down */
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: #1a202c;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @media screen and (max-width: 700px) {
+            .product-details-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+            }
+
+            .product-details-img img {
+                width: 100%;
+                /* image fills the container width */
+                max-width: 300px;
+                /* optional: limit max size */
+                height: auto;
+                /* maintain aspect ratio */
+                margin-bottom: 15px;
+            }
+
+            .product-details-info {
+                text-align: center;
+            }
+
+            .product-details-info h2 {
+                font-size: 1.5rem;
+            }
+
+            .product-details-info p {
+                font-size: 1rem;
+                margin: 5px 0;
+            }
+
+            #add-to-cart {
+                width: 100%;
+                padding: 12px 0;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Trexo</h1>
+        <div class="navbar-links">
+            <p class="navbar-a-link"><a href="index.html">Home</a></p>
+            <p class="navbar-a-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-a-link"><a href="contact.html">Contact</a></p>
+        </div>
+        <div class="navbar-menu-toggle" onclick="showNavBar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="side-navbar">
+        <p style="text-align: right;">
+            <i class="fa-solid fa-xmark" onclick="closeNavBar()"></i>
+        </p>
+        <div class="side-navbar-links">
+            <p class="side-navbar-a-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-a-link"><a href="collection.html">Collections</a></p>
+            <p class="side-navbar-a-link"><a href="contact.html">Contact</a></p>
+        </div>
+    </div>
+
+    <!-- Product Details Section -->
+    <div class="product-details-container">
+        <div class="product-details-img">
+            <img id="product-img" src="" alt="Product Image">
+        </div>
+        <div class="product-details-info">
+            <h2 id="product-name"></h2>
+            <p id="product-price">Price: $0</p>
+            <p id="product-shipping">Shipping: Free</p>
+            <p id="product-description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button id="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <!--Footer Section-->
+    <div class="footer" style="width: 100%;display: block;">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2 class="heading-text">Trexo</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro possimus consequatur molestiae
+                    assumenda ipsa officiis tempora ab fugit! Enim, deleniti!</p>
+                <div class="footer-icon-container">
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                        <i class="fa-brands fa-linkedin" style="color: white;"></i>
+                    </a>
+                    <a href="https://www.instagram.com/yourprofile" target="_blank">
+                        <i class="fa-brands fa-instagram" style="color: white;"></i>
+                    </a>
+                    <a href="https://github.com/yourprofile" target="_blank">
+                        <i class="fa-brands fa-github" style="color: white;"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <p>@2025 Trexo.com</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!--Script-->
+    <script>
+        // Read URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const img = urlParams.get('img');
+        const name = urlParams.get('name');
+
+        // Populate the product details
+        document.getElementById('product-img').src = img || "img/default.jpg";
+        document.getElementById('product-name').textContent = name || "Unknown Product";
+
+        // Define product prices
+        const prices = {
+            "Black Shirt": "$25",
+            "Chudithar": "$30",
+            "Hoodies": "$35"
+            // Add more products here
+        };
+
+        if (prices[name]) {
+            document.getElementById('product-price').textContent = `Price: ${prices[name]}`;
+        }
+
+        // Add to cart button
+        document.getElementById('add-to-cart').addEventListener('click', () => {
+            const productImg = encodeURIComponent(img);
+            const productName = encodeURIComponent(name);
+            const productPrice = encodeURIComponent(prices[name] || "$0");
+
+            window.location.href = `cart.html?img=${productImg}&name=${productName}&price=${productPrice}`;
+        });
+    </script>
+
+
+</body>
+
+</html>

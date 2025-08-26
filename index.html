@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trexo E-commerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!--Font Awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--NavBar Section-->
+    <nav class="navbar">
+        <h1>Trexo</h1>
+        <div class="navbar-links">
+            <p class="navbar-a-link"><a href="index.html">Home</a></p>
+            <p class="navbar-a-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-a-link"><a href="contact.html">Contact</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="showNavBar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!--Side Navbar when Clicking on the Toggle Icon-->
+    <div class="side-navbar">
+        <p style="text-align: right;">
+            <i class="fa-solid fa-xmark" onclick="closeNavBar()"></i>
+        </p>
+        <div class="side-navbar-links">
+            <p class="side-navbar-a-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-a-link"><a href="collection.html">Collections</a></p>
+            <p class="side-navbar-a-link"><a href="contact.html">Contact</a></p>
+        </div>
+    </div>
+
+    <!--Header-->
+    <div class="header">
+        <div>
+            <h1>Level Up Your Style</h1>
+            <p>With Out Stunning Collections</p>
+            <a href="collection.html">
+                <button class="header-button">Shop Now</button>
+            </a>
+        </div>
+
+        <div>
+            <img class="header-image" src="img/ImageUI3.webp" alt="Picture">
+        </div>
+    </div>
+
+    <!--Service-->
+    <div class="service">
+        <div class="service-container-1">
+            <div>
+                <h2>We Provide Best</h2>
+                <h2>Customer Experience</h2>
+            </div>
+
+            <div>
+                <p>|| We Ensure That Our Customer Have The Best Shopping Experience</p>
+            </div>
+        </div>
+
+        <div class="service-container-2">
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <h4>Satisfaction Guarantee</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut distinctio neque, at voluptatum magnam
+                    tempora excepturi nam asperiores id deserunt.</p>
+            </div>
+
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <h4>New Arrival Everyday</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut distinctio neque, at voluptatum magnam
+                    tempora excepturi nam asperiores id deserunt.</p>
+            </div>
+
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <h4>Fast & Free Shipping</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut distinctio neque, at voluptatum magnam
+                    tempora excepturi nam asperiores id deserunt.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--New Arrival-->
+    <div>
+        <h2 style="padding: 20px;">New Arrival</h2>
+    </div>
+
+    <div class="new-arrival">
+        <div class="new-arrival-container">
+            <img src="img/new arrivals/three.jpeg" class="random-fashion" alt="new Arrival">
+            <a href="product-details.html?img=img/new%20arrivals/three.jpeg&name=Shirt">
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </a>
+
+
+        </div>
+
+        <div class="new-arrival-container">
+            <img src="img/new arrivals/five.jpeg" class="random-fashion" alt="new Arrival">
+            <a href="product-details.html?img=img/new%20arrivals/five.jpeg&name=Chudithar">
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </a>
+        </div>
+
+        <div class="new-arrival-container">
+            <img src="img/new arrivals/two.jpeg" class="random-fashion" alt="new Arrival">
+            <a href="product-details.html?img=img/new%20arrivals/two.jpeg&name=White cout">
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </a>
+        </div>
+
+
+        <div class="new-arrival-container">
+            <img src="img/new arrivals/six.jpeg" class="random-fashion" alt="new Arrival">
+            <a href="product-details.html?img=img/new%20arrivals/six.jpeg&name=Ladies Shirt">
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </a>
+        </div>
+    </div>
+
+    <!--Mens Section-->
+    <div>
+        <h2 style="padding: 20px;">For Mens</h2>
+    </div>
+
+    <div class="new-arrival">
+        <div class="new-arrival-container">
+            <img src="img/mens/Hoodies.jpeg" class="random-fashion" alt="new Arrival">
+            <a href="product-details.html?img=img/mens/Hoodies.jpeg&name=Hoodies">
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </a>
+        </div>
+
+        <div class="new-arrival-container">
+            <img src="img//mens/shirt.jpeg" class="random-fashion" alt="new Arrival">
+            <a href="product-details.html?img=img/mens/shirt.jpeg&name=yellow shirt">
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </a>
+        </div>
+
+        <div class="new-arrival-container">
+            <img src="img/mens/one.jpeg" class="random-fashion" alt="new Arrival">
+            <a href="product-details.html?img=img/mens/one.jpeg&name=Denim Shirt">
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </a>
+        </div>
+
+        <div class="new-arrival-container">
+            <img src="img/mens/suit.jpeg" class="random-fashion" alt="new Arrival">
+            <a href="product-details.html?img=img/mens/suit.jpeg&name=Green Suit">
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </a>
+        </div>
+    </div>
+
+    <!--Womens Section-->
+    <div>
+        <h2 style="padding: 20px;">For Womens</h2>
+    </div>
+
+    <div class="new-arrival">
+        <div class="new-arrival-container">
+            <img src="img/Womens/one.jpeg" class="random-fashion" alt="new Arrival">
+            <a href="product-details.html?img=img/Womens/one.jpeg&name=Salwar">
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                </a>
+
+        </div>
+
+        <div class="new-arrival-container">
+            <img src="img/Womens/six.jpeg" class="random-fashion" alt="new Arrival">
+            <a href="product-details.html?img=img/Womens/six.jpeg&name=Modern Dress">
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                </a>
+
+        </div>
+
+        <div class="new-arrival-container">
+            <img src="img/Womens/seven.jpeg" class="random-fashion" alt="new Arrival">
+            <a href="product-details.html?img=img/Womens/seven.jpeg&name=Black Skirt">
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </a>
+
+        </div>
+
+        <div class="new-arrival-container">
+            <img src="img/Womens/three.jpeg" class="random-fashion" alt="new Arrival">
+            <a href="product-details.html?img=img/Womens/three.jpeg&name=Ladies Top">
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </a>
+
+        </div>
+    </div>
+
+    <!--News Section-->
+    <div class="news-section">
+        <h2>Join Our News Letter</h2>
+        <p>Signup for our email newsletter to get exclustive discounts and updates and more</p>
+        <div>
+            <input type="text" class="search">
+        </div>
+
+        <div>
+            <button>Subscribe <i class="fa-solid fa-thumbs-up"></i></button>
+        </div>
+    </div>
+
+    <!--Footer Section-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2 class="heading-text">Trexo</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro possimus consequatur molestiae
+                    assumenda ipsa officiis tempora ab fugit! Enim, deleniti!</p>
+                <div class="footer-icon-container">
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                        <i class="fa-brands fa-linkedin" style="color: white;"></i>
+                    </a>
+                    <a href="https://www.instagram.com/yourprofile" target="_blank">
+                        <i class="fa-brands fa-instagram" style="color: white;"></i>
+                    </a>
+                    <a href="https://github.com/yourprofile" target="_blank">
+                        <i class="fa-brands fa-github" style="color: white;"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <p>@2025 Trexo.com</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="product-details.js"></script>
+
+</body>
+
+</html>

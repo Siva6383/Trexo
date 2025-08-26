@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trexo E-commerce</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!--Font Awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--Navbar Section-->
+    <nav class="navbar">
+        <h1>Trexo</h1>
+        <div class="navbar-links">
+            <p class="navbar-a-link"><a href="index.html">Home</a></p>
+            <p class="navbar-a-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-a-link"><a href="contact.html">Contact</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="showNavBar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!--Side Navbar when Clicking on the Toggle Icon-->
+    <div class="side-navbar">
+        <p style="text-align: right;">
+            <i class="fa-solid fa-xmark" onclick="closeNavBar()"></i>
+        </p>
+        <div class="side-navbar-links">
+            <p class="side-navbar-a-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-a-link"><a href="collection.html">Collections</a></p>
+            <p class="side-navbar-a-link"><a href="contact.html">Contact</a></p>
+        </div>
+    </div>
+
+    <!--Product-->
+
+    <div class="product-section">
+        <form class="product-search">
+            <input type="text" id="search" placeholder="Enter Your Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+
+        <div>
+            <h2 style="padding: 20px;">Collections</h2>
+        </div>
+
+        <div class="products" id="products">
+            <!--First Column-->
+            <div class="product-box">
+                <img src="img/mens/blackshirt.jpeg" class="random-fashion" alt="product">
+                <a href="product-details.html?img=img/mens/blackshirt.jpeg&name=Black Shirt">
+                    <button>Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </a>
+                <p>black Shirt</p>
+            </div>
+
+            <div class="product-box">
+                <img src="img/Womens/chudithar.jpeg" class="random-fashion" alt="Chudithar">
+                <a href="product-details.html?img=img/Womens/chudithar.jpeg&name=Chudithar">
+                    <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                </a>
+                <p>Chudithar</p>
+            </div>
+
+
+            <div class="product-box">
+                <img src="img/mens/hoodie.jpeg" class="random-fashion" alt="product">
+                <a href="product-details.html?img=img/mens/hoodie.jpeg&name=Hoodies">
+                    <button>Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </a>
+                <p>Hoodies</p>
+            </div>
+
+            <div class="product-box">
+                <img src="img/Womens/jeans.jpeg" class="random-fashion" alt="product">
+                <a href="product-details.html?img=img/womens/jeans.jpeg&name=Ladies Jeans">
+                    <button>Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </a>
+                <p>Ladies Jeans</p>
+            </div>
+            <!-- <div style="width: 100%; height: 2px;display: block;background-color: black;"></div> -->
+
+            <!--Second Column-->
+
+            <div class="product-box">
+                <img src="img/Womens/leganga.jpeg" class="random-fashion" alt="product">
+                <a href="product-details.html?img=img/womens/leganga.jpeg&name=Leganga">
+                    <button>Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </a>
+                <p>legangs</p>
+            </div>
+
+            <div class="product-box">
+                <img src="img/mens/coutshuit.jpeg" class="random-fashion" alt="product">
+                <a href="product-details.html?img=img/mens/coutshuit.jpeg&name=Cout Suit">
+                    <button>Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </a>
+                <p>Cout Suit</p>
+            </div>
+
+            <div class="product-box">
+                <img src="img/Womens/one.jpeg" class="random-fashion" alt="product">
+                <a href="product-details.html?img=img/womens/one.jpeg&name=Punjabi Chudithar">
+                    <button>Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </a>
+                <p>Punjabi Chudithar</p>
+            </div>
+
+            <div class="product-box">
+                <img src="img/mens/four.jpeg" class="random-fashion" alt="product">
+                <a href="product-details.html?img=img/mens/four.jpeg&name=T-shirt">
+                    <button>Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </a>
+                <p>T-shirt</p>
+            </div>
+            <!-- <div style="width: 100%; height: 2px;display: block;background-color: black;"></div> -->
+
+            <!--Third Column-->
+            <div class="product-box">
+                <img src="img/Womens/Leganga1.jpeg" class="random-fashion" alt="product">
+                <a href="product-details.html?img=img/womens/Leganga1.jpeg&name=Leganga">
+                    <button>Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </a>
+                <p>leganga</p>
+            </div>
+
+            <div class="product-box">
+                <img src="img/mens/doublepocket.jpeg" class="random-fashion" alt="product">
+                <a href="product-details.html?img=img/mens/doublepocket.jpeg&name=Double Pocket">
+                    <button>Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </a>
+                <p>Double Pocket</p>
+            </div>
+
+            <div class="product-box">
+                <img src="img/Womens/anarkali.jpeg" class="random-fashion" alt="product">
+                <a href="product-details.html?img=img/womens/anarkali.jpeg&name=Anarkali">
+                    <button>Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </a>
+                <p>Anarkali</p>
+            </div>
+
+            <div class="product-box">
+                <img src="img/mens/kurtapyjama.jpeg" class="random-fashion" alt="product">
+                <a href="product-details.html?img=img/mens/kurtapyjama.jpeg&name=Kurta Pyjama">
+                    <button>Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </a>
+                <p>Kurta Pyjama</p>
+            </div>
+
+            <!--Fourth Column-->
+            <div class="product-box">
+                <img src="img/Womens/salwar.jpeg" class="random-fashion" alt="product">
+                <a href="product-details.html?img=img/womens/salwar.jpeg&name=Salwar">
+                    <button>Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </a>
+                <p>Salwar</p>
+            </div>
+
+            <div class="product-box">
+                <img src="img/mens/denimshirt.jpeg" class="random-fashion" alt="product">
+                <a href="product-details.html?img=img/mens/denimshirt.jpeg&name=Denim Shirt">
+                    <button>Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </a>
+                <p>Denim Shirt</p>
+            </div>
+
+            <div class="product-box">
+                <img src="img/Womens/jeans.jpeg" class="random-fashion" alt="product">
+                <a href="product-details.html?img=img/womens/jeans.jpeg&name=Jeans">
+                    <button>Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </a>
+                <p>Jeans</p>
+            </div>
+
+            <div class="product-box">
+                <img src="img/mens/leatherjacket.jpeg" class="random-fashion" alt="product">
+                <a href="product-details.html?img=img/mens/leatherjacket.jpeg&name=Leather Jacket">
+                    <button>Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </a>
+                <p>Leather Jacket</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Footer Section-->
+    <div class="footer" style="width: 100%;display: block;">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2 class="heading-text">Trexo</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro possimus consequatur molestiae
+                    assumenda ipsa officiis tempora ab fugit! Enim, deleniti!</p>
+                <div class="footer-icon-container">
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                        <i class="fa-brands fa-linkedin" style="color: white;"></i>
+                    </a>
+                    <a href="https://www.instagram.com/yourprofile" target="_blank">
+                        <i class="fa-brands fa-instagram" style="color: white;"></i>
+                    </a>
+                    <a href="https://github.com/yourprofile" target="_blank">
+                        <i class="fa-brands fa-github" style="color: white;"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <p>@2025 Trexo.com</p>
+        </div>
+    </div>
+    <script src="collection.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
