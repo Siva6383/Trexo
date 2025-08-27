@@ -34,7 +34,7 @@
             margin-left: 15px;
         }
 
-        .navbar a:hover{
+        .navbar a:hover {
             color: white;
         }
 
@@ -136,46 +136,48 @@
                 font-size: 0.9rem;
             }
         } */
-         /* Mobile (≤600px) */
-@media screen and (max-width: 600px) {
-    .navbar {
-        flex-direction: row;   /* Keep in a row */
-        justify-content: space-between; /* Space between logo & icon */
-        align-items: center;
-    }
+        /* Mobile (≤600px) */
+        @media screen and (max-width: 600px) {
+            .navbar {
+                flex-direction: row;
+                /* Keep in a row */
+                justify-content: space-between;
+                /* Space between logo & icon */
+                align-items: center;
+            }
 
-    .navbar-links {
-        display: none; /* Hide links in mobile, show sidebar toggle instead */
-    }
+            .navbar-links {
+                display: none;
+                /* Hide links in mobile, show sidebar toggle instead */
+            }
 
-    .cart-item {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-    }
+            .cart-item {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+            }
 
-    .cart-item img {
-        width: 100%;
-        max-width: 220px;
-        height: auto;
-        margin-bottom: 10px;
-    }
+            .cart-item img {
+                width: 100%;
+                max-width: 220px;
+                height: auto;
+                margin-bottom: 10px;
+            }
 
-    .cart-item-info {
-        margin-left: 0;
-    }
+            .cart-item-info {
+                margin-left: 0;
+            }
 
-    .cart-total {
-        text-align: left;
-        font-size: 1.1rem;
-    }
+            .cart-total {
+                text-align: left;
+                font-size: 1.1rem;
+            }
 
-    #checkout-btn {
-        font-size: 0.9rem;
-        padding: 12px 0;
-    }
-}
-
+            #checkout-btn {
+                font-size: 0.9rem;
+                padding: 12px 0;
+            }
+        }
     </style>
 </head>
 
